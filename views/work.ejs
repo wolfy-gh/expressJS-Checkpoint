@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Express Js</title>
+  </head>
+  <body class="landing">
+
+
+    <%- include("partials/header"); -%>
+
+<!-- Banner -->
+    <section id="banner">
+        <i class="icon fa-diamond"></i>
+        <h2>Express Checkpoint</h2>
+        <% if(!messageStyle) { %>
+            <p style="color: rgb(247, 243, 243)"><%= ourDay %></p>   
+        <% } %>
+    </section>
+
+
+<!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
