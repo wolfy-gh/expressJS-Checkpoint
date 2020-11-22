@@ -13,11 +13,11 @@ var message = ""
 var messageStyle = true
 
 if((day==6)||(day==0)){
-    message="Available : From Monday To Friday"
+    message="Available : From Monday To Friday ( 9am to 5pm )"
     messageStyle = !messageStyle   
 }else {
     if ((hour >= 17) && (hour <9)) {
-        message = "Working hour : From 9am To 5pm"
+        message = "Available : From Monday To Friday ( 9am to 5pm )"
         messageStyle = !messageStyle
     }
 }
