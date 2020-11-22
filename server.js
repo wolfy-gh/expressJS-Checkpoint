@@ -16,14 +16,14 @@ if((day==6)||(day==0)){
     message="Available : From Monday To Friday ( 9am to 5pm )"
     messageStyle = !messageStyle   
 }else {
-    if ((hour >= 17) && (hour <9)) {
+    if ((hour >= 9) && (hour < 17)) {
         message = "Available : From Monday To Friday ( 9am to 5pm )"
         messageStyle = !messageStyle
     }
 }
 
 // **********************
-//      WORKING TIME 
+//      AVAILABLE 
 // **********************
 app.use((req, res, next) => {
     switch (day) {
